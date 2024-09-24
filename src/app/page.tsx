@@ -11,7 +11,6 @@ import Experience from './experience/page'
 const page = () => {
   return (
     <>
-    {/* min-h-screen --> 100% view port hight || 0.96  -> opacity || antialised  -> do font smooth */}
       <main className='antialiased bg-grid-slate-50/[0.02] overflow-hidden '>
         <HeroSection />
         <AboutMe /> 

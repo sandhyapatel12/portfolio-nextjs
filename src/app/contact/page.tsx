@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 export default function Contact() {
   return (
     <>
-      <section className='min-h-screen mt-24 '>
+      <section className='min-h-screen mt-32 '>
 
         <div className="max-w-5xl mx-auto  flex px-10 space-x-3 ">
           <div className="bg-green-600 h-8 w-2 rounded-md"></div>

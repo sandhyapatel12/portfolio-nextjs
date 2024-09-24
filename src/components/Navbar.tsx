@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <>
 
-            <nav className="px-4 py-5  w-full flex justify-between items-center fixed top-5 max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl rounded-3xl md:rounded-full border border-gray-500  bg-black z-50 shadow-lg  ">
+            <nav className="px-4 py-5  w-full flex justify-between items-center fixed top-5 max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-5xl rounded-3xl md:rounded-full border border-gray-500  bg-black z-50 shadow-lg  ">
 
                 <h1 className="font-bold  md:hidden text-xl text-green-600 lg:text-2xl ">Portfolio</h1>
 

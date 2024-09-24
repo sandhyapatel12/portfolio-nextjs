@@ -33,7 +33,7 @@ const Services = () => {
         <>
             <section className='min-h-screen flex items-center justify-center'>
 
-                <div className="mt-20">
+                <div className="mt-28">
 
                     <div className='max-w-5xl mx-auto  flex px-10 space-x-3 '>
                         <div className='bg-green-600 h-8 w-2 rounded-md'></div>
