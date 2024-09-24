@@ -1,77 +1,115 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import { HoveredLink, Menu, MenuItem, ProductItem } from "../components/ui/navbar-menu";
-import { cn } from "@/lib/utils";
-import Link from "next/link";
+import Link from 'next/link';
+import React, { useState } from 'react'
+import { FaHome, FaWindowClose } from 'react-icons/fa';
+import { TbMenuDeep } from 'react-icons/tb';
+import { MdMiscellaneousServices, MdPermContactCalendar } from 'react-icons/md';
+import { AiFillProject } from 'react-icons/ai';
+import { GiSkills } from 'react-icons/gi';
+import { FaPersonCircleExclamation } from 'react-icons/fa6';
 
-const Navbar = ({ className }: { className?: string }) => {
+const Navbar = () => {
 
-    const [active, setActive] = useState<string | null>(null);
+    const [isOpen, setisOpen] = useState(false);
+
 
     return (
-        <div className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}>
-            <Menu setActive={setActive}>
+        <>
 
-                {/* home */}
-                <Link href={'/'}>
-                    <MenuItem setActive={setActive} active={active} item="Home" />
-                </Link>
+            <nav className="px-4 py-5  w-full flex justify-between items-center fixed top-5 max-w-xl md:max-w-2xl lg:max-w-3xl xl:max-w-4xl rounded-3xl md:rounded-full border border-gray-500  bg-black z-50 shadow-lg  ">
 
-                {/* about me */}
-                <Link href={'/aboutme'}>
-                    <MenuItem setActive={setActive} active={active} item="About Me">
-                        <div className="flex flex-col space-y-4 text-sm">
-                            <HoveredLink href="/skills">Skills</HoveredLink>
-                            <HoveredLink href="/individual">Individual</HoveredLink>
-                           
+                <h1 className="font-bold  md:hidden text-xl text-green-600 lg:text-2xl ">Portfolio</h1>
+
+                {/* start menus */}
+                <div className="hidden  md:flex  justify-evenly px-16 w-full">
+
+                    <Link href='/' className='text-gray-200 font-bold hover:text-gray-300  flex items-center justify-center space-x-2'>
+                        <h1>Home</h1>
+                    </Link>
+
+                    <Link href='/about' className='text-gray-200 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                        <h1>About</h1>
+                    </Link>
+
+                    <Link href='/skills' className='text-gray-200 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                        <h1>Skills</h1>
+                    </Link>
+
+                    <Link href='/projects' className='text-gray-200 font-bold  hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                        <h1>Projects</h1>
+                    </Link>
+
+                    <Link href='/services' className='text-gray-200 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                        <h1>Services</h1>
+                    </Link>
+
+                    <Link href='/contact' className='text-gray-200 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                        <h1>Contact</h1>
+                    </Link>
+                </div>
+                {/* end of  menus */}
+
+
+                {/* menu bar for smaller devices */}
+                <button className='md:hidden' onClick={() => setisOpen(!isOpen)}>
+                    {isOpen ? (
+
+                        <div className={`fixed inset-y-0 right-0 w-fit bg-gray-900  text-white lg:hidden transform transition-transform ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
+                            <FaWindowClose className='text-xl font-bold text-gray-300 fixed right-3 top-5' />    {/* close icon */}
+
+                            <div className="flex flex-col space-y-6 h-ful items-start  px-10 py-16 ">
+
+                                <Link href='/' className='text-green-600 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                                    <FaHome />
+                                    <h1>Home</h1>
+                                </Link>
+
+                                <Link href='/about' className='text-green-600 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                                    <FaPersonCircleExclamation />
+                                    <h1>About</h1>
+                                </Link>
+
+                                <Link href='/skills' className='text-green-600 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                                    <GiSkills />
+                                    <h1>Skills</h1>
+                                </Link>
+
+                                <Link href='/projects' className='text-green-600 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                                    <AiFillProject />
+                                    <h1>Projects</h1>
+                                </Link>
+
+                                <Link href='/services' className='text-green-600 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                                    <MdMiscellaneousServices />
+                                    <h1>Services</h1>
+                                </Link>
+
+                                <Link href='/contact' className='text-green-600 font-bold hover:text-gray-300 text-md flex items-center justify-center space-x-2'>
+                                    <MdPermContactCalendar />
+                                    <h1>Contact</h1>
+                                </Link>
+
+                            </div>
                         </div>
-                    </MenuItem>
-                </Link>
+                    ) :
+                        (
+                            //menu bar
+                                <TbMenuDeep className='text-2xl font-bold text-green-600' />
 
-                {/* projects */}
-                <Link href={'/projects'}>
-                    <MenuItem setActive={setActive} active={active} item="Projects">
-                        <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-                            <ProductItem
-                                title="Algochurn"
-                                href="https://algochurn.com"
-                                src="https://assets.aceternity.com/demos/algochurn.webp"
-                                description="Prepare for tech interviews like never before."
-                            />
-                            <ProductItem
-                                title="Tailwind Master Kit"
-                                href="https://tailwindmasterkit.com"
-                                src="https://assets.aceternity.com/demos/tailwindmasterkit.webp"
-                                description="Production ready Tailwind css components for your next project"
-                            />
-                            <ProductItem
-                                title="Moonbeam"
-                                href="https://gomoonbeam.com"
-                                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.51.31%E2%80%AFPM.png"
-                                description="Never write from scratch again. Go from idea to blog in minutes."
-                            />
-                            <ProductItem
-                                title="Rogue"
-                                href="https://userogue.com"
-                                src="https://assets.aceternity.com/demos/Screenshot+2024-02-21+at+11.47.07%E2%80%AFPM.png"
-                                description="Respond to government RFPs, RFIs and RFQs 10x faster using AI"
-                            />
-                        </div>
-                    </MenuItem>
-                </Link>
+                        )}
+                </button>
 
-            
-
-
-                {/* social */}
-                <Link href={'/contact'}>
-                    <MenuItem setActive={setActive} active={active} item="Contact Me" />
-                </Link>
-
-            </Menu>
-        </div>
+            </nav>
+        </>
     )
 }
 
 export default Navbar
+
+
+
+
+
+
+
