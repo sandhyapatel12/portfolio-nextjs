@@ -51,7 +51,7 @@ export default function Projects() {
                                 <h1 className=" text-gray-400 font-bold mt-3"> This is social media app which is developed in react js with all social funcnality.</h1>
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
-                                    <Link href='/'>
+                                    <Link href='https://github.com/sandhyapatel12/social-media-react'>
                                         <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
                                     </Link>
                                 </div>
@@ -69,7 +69,7 @@ export default function Projects() {
                                 <h1 className=" text-gray-400 font-bold mt-3"> In this app includes payment gatway, login with google, register user with backend.</h1>
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
-                                    <Link href='https://github.com/sandhyapatel12/food-ordering-System-redux-toolk'>
+                                    <Link href='https://github.com/sandhyapatel12/food-ordering-System-redux-toolkit'>
                                         <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
                                     </Link>
                                 </div>
