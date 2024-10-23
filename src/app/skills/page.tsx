@@ -1,8 +1,6 @@
 import { FaGithub, FaReact } from "react-icons/fa";
-import { SiNextdotjs, SiRedux } from "react-icons/si";
-import { TbBrandRedux } from "react-icons/tb";
+import { SiRedux } from "react-icons/si";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
-import { BsFiletypeHtml } from "react-icons/bs";
 import { MdCss } from "react-icons/md";
 import { MdOutlineHtml } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io5";

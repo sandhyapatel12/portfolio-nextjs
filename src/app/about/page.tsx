@@ -19,7 +19,7 @@ const page = () => {
 
           {/* left side */}
           <div className='py-5 flex flex-col px-10  justify-center '>
-            <h1 className='text-2xl md:text-3xl lg:4xl font-bold text-green-600'>I'm Frontend Developer</h1>
+            <h1 className='text-2xl md:text-3xl lg:4xl font-bold text-green-600'>I am Frontend Developer</h1>
             <p className='text-gray-400 mt-8 leading-7'>I am a passionate frontend developer with a knack for turning complex ideas into visually appealing and user-friendly web interfaces. With expertise in HTML5, CSS3, JavaScript, and modern frontend frameworks like react js.</p>
             <Link href='/contact' className='mt-8 hover:text-gray-300 bg-green-600 text-black py-2 px-4 font-bold rounded-xl w-fit'>
               <button>contact me</button>
