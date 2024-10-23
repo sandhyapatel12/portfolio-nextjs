@@ -1,4 +1,12 @@
-# unique UI 
+##   install next in your project locally or globally
+
+`npm install next react react-dom`
+
+## install node_module
+
+`npm install`
+
+## unique UI 
 
 - https://ui.aceternity.com/
 `npm i framer-motion clsx tailwind-merge`
