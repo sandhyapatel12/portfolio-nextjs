@@ -11,6 +11,8 @@ import { FaPersonCircleExclamation } from 'react-icons/fa6';
 
 const Navbar = () => {
 
+
+
     const [isOpen, setisOpen] = useState(false);
 
 

@@ -3,9 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const page = () => {
+
+  const imageUrl = process.env.NEXT_PUBLIC_PERSONAL_IMAGE_URL || '/default-image.jpg'; // Provide a fallback image
+
   return (
     <>
-      <section className='min-h-screen mt-24 '>
+      <section className='min-h-screen mt-28 '>
 
         <div className='max-w-5xl mx-auto flex space-x-2 px-12 '>
           <div className='bg-green-600 h-8 w-2 rounded-md'></div>
@@ -25,8 +28,8 @@ const page = () => {
 
           {/* right side */}
           <div className='w-full'>
-            <Image src="https://images.unsplash.com/photo-1554080353-a576cf803bda?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3387&q=80"
-              alt='img'
+            <Image src={imageUrl}
+              alt='My Personal Image'
               height={350}
               width={350}
               className='rounded-full  px-5 py-5' />

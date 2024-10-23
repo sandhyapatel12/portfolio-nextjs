@@ -1,3 +1,7 @@
+# My personal Portfolio website
+
+-   This is fully responsive website with next js and unique UI.
+
 ##   install next in your project locally or globally
 
 `npm install next react react-dom`

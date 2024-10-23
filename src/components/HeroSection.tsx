@@ -60,7 +60,7 @@ function HeroSection() {
           {/* make sure the resume.pdf file is located in the public directory */}
           {/* here a tag needed otherwise download not work */}
           <div>
-          <a href="/resume.pdf" download="resume.pdf">  
+          <a href="/mycv.pdf" download="mycv.pdf">  
           <Button
               borderRadius="1.75rem"
               className="bg-white text-lg   dark:bg-black dark:hover:text-green-500 text-black dark:text-gray-300 border-neutral-200 dark:border-slate-800 font-bold"

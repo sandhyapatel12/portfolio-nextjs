@@ -31,7 +31,6 @@ export default function Projects() {
                                 <h1 className=" text-gray-400 font-bold mt-3"> I developed a personal portfolio website to showcase my skills, projects, and experience.</h1>
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
-                                <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">view</button>
                                 <Link href='https://github.com/sandhyapatel12/portfolio-nextjs'>
                                     <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
                                     </Link>

@@ -87,26 +87,21 @@ export default function Contact() {
             </div>
 
             <div className="px-8 md:px-20 mt-10 text-gray-300">
-              <div className="flex space-x-2 items-center hover:text-green-600">
+            <div className="flex space-x-2 items-center hover:text-green-600">
                 <MdEmail className="text-2xl" />
-                <a href="sandhyapt30@gmail.com" className="font-bold">
+                <a href="mailto:sandhyapt30@gmail.com" className="font-bold">
                   sandhyapt30@gmail.com
                 </a>
               </div>
 
-              <div className="flex space-x-5 text-3xl items-center hover:text-green-600 mt-5">
+              <div className="flex space-x-5 text-3xl items-center ">
                 <a href="https://www.linkedin.com/in/sandhyafrontend/">
-                  <FaLinkedin />
+                  <FaLinkedin className="hover:text-green-600 mt-5" />
                 </a>
 
                 <a href="https://github.com/sandhyapatel12">
-                  <FaGithub />
+                  <FaGithub className="hover:text-green-600 mt-5" />
                 </a>
-
-                <a href="https://github.com/sandhyapatel12">
-                  <FaInstagramSquare />
-                </a>
-
 
               </div>
 
