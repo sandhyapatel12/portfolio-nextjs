@@ -4,6 +4,9 @@ import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 import { MdCss } from "react-icons/md";
 import { MdOutlineHtml } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io5";
+import { FaPython } from "react-icons/fa";
+import { DiDjango } from "react-icons/di";
+
 
 const Skills = () => {
   return (
@@ -38,8 +41,8 @@ const Skills = () => {
                   <FaReact className="h-10 w-10 md:h-14 md:w-14" />
                 </div>
                 <div className='flex items-center justify-center rounded-md bg-gray-800 h-20 w-24 md:h-24 md:w-28 hover:scale-110 transform transition-transform duration-300'>
-                  <SiRedux className="h-10 w-10 md:h-14 md:w-14" />
-                </div>
+                  <FaPython className="h-10 w-10 md:h-14 md:w-14" />
+                </div> 
                 <div className='flex items-center justify-center rounded-md bg-gray-800 h-20 w-24 md:h-24 md:w-28 hover:scale-110 transform transition-transform duration-300'>
                   <RiTailwindCssFill className="h-10 w-10 md:h-14 md:w-14" />
                 </div>
@@ -50,9 +53,11 @@ const Skills = () => {
                   <RiNextjsFill className="h-10 w-10 md:h-14 md:w-14" />
                 </div>
                 <div className='flex items-center justify-center rounded-md bg-gray-800 h-20 w-24 md:h-24 md:w-28 hover:scale-110 transform transition-transform duration-300'>
-                  <FaGithub className="h-10 w-10 md:h-14 md:w-14" />
+                  <DiDjango className="h-10 w-10 md:h-14 md:w-14" />
                 </div>
-
+                 <div className='flex items-center justify-center rounded-md bg-gray-800 h-20 w-24 md:h-24 md:w-28 hover:scale-110 transform transition-transform duration-300'>
+                  <SiRedux className="h-10 w-10 md:h-14 md:w-14" />
+                </div>
               </div>
 
             </div>
@@ -63,13 +68,14 @@ const Skills = () => {
 
               <div className=' flex space-x-2 px-8 md:px-12 md:-mt-14'>
                 <div className='bg-green-600 h-8 w-2 rounded-md'></div>
-                <div className='text-xl font-bold'>Why here me? </div>
+                <div className='text-xl font-bold'>Why hire me? </div>
               </div>
 
               <div className="mt-12 px-12 text-gray-300">
-                <li >I create websites that work flawlessly across all devices, ensuring a smooth and consistent experience.</li>
-                <li className="mt-8">I bring designs to life by focusing on usability, accessibility, and pixel-perfect precision.</li>
-                <li className="mt-8">From animations to interactive elements, I utilize modern JavaScript frameworks like React.js to enhance web functionality and performance.</li>
+                <li >I don’t just build — I think. I solve real-world problems with scalable, maintainable code.</li>
+                <li className="mt-8">I listen, communicate clearly, and care deeply about delivering value that aligns with your business goals.</li>
+                <li className="mt-8">I stay updated with the latest trends to keep your product modern and competitive.</li>
+                <li className="mt-8">You can count on me to deliver quality work — on time, every time.</li>
               </div>
 
             </div>

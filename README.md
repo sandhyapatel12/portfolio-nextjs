@@ -10,6 +10,10 @@
 
 `npm install`
 
+## How to run code
+
+`npm run dev`a
+
 ## unique UI 
 
 - https://ui.aceternity.com/

@@ -16,7 +16,7 @@ const Experience = () => {
                     <a href='https://thinknovus.com/'><button className='text-gray-200 md:font-semibold mx-10 md:mx-0 hover:text-gray-700'>  Think Novous Technologies</button></a>
                     </div>
 
-                    <h1 className='text-sm font-semibold text-gray-400 mt-5 md:mt-0'>January, 2024 - Present</h1>
+                    <h1 className='text-sm font-semibold text-gray-400 mt-5 md:mt-0'>Jan, 2024 - Jan, 2025</h1>
                     <li className='mt-8 font-semibold text-gray-400'>Designed and implemented user-friendly, responsive web applications using HTML5, CSS3, JavaScript (ES6+) and modern frameworks like React, Redux toolkit, Tailwind css.</li>
                     <li className='mt-8 font-semibold text-gray-400'>Improved website performance and SEO by optimizing code, reducing load times, and implementing best practices like lazy loading and minimizing CSS/JS bundles.</li>
                 </div>

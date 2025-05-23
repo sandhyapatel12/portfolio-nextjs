@@ -18,26 +18,59 @@ export default function Projects() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-                            {/* portfolio website */}
+                            {/* Todo - flask website */}
                             <div className="max-w-xs w-full border border-gray-400 rounded-lg p-3">
+
+                               
+
                                 <div
                                     className={cn(
-                                        "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border  border-transparent dark:border-neutral-800",
-                                        "bg-[url('/projects/p1.png')] bg-cover	",
-                                    )}>
-
+                                        "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
+                                        "bg-[url('/projects/p1.png')] bg-cover"
+                                    )}
+                                >
+                                    {/* Optional overlay or title can go here */}
                                 </div>
 
-                                <h1 className=" text-gray-400 font-bold mt-3"> I developed a personal portfolio website to showcase my skills, projects, and experience.</h1>
+                                <h1 className="text-gray-400 font-bold mt-3">
+                                    A simple and user-friendly To-Do app built with <span className="font-bold text-green-600">Flask</span> that allows users to Read, add, edit and delete.
+                                </h1>
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
-                                <Link href='https://github.com/sandhyapatel12/portfolio-nextjs'>
-                                    <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
+                                    <Link href="https://todo-app-flask-c7oo.onrender.com/login?next=%2F">
+                                        <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">
+                                            View
+                                        </button>
                                     </Link>
                                 </div>
-
-
                             </div>
+
+                            {/* Freelancing platform */}
+                            <div className="max-w-xs w-full border border-gray-400 rounded-lg p-3">
+
+                               <div
+                                    className={cn(
+                                        "group w-full cursor-pointer overflow-hidden relative card h-96 rounded-md shadow-xl mx-auto flex flex-col justify-end p-4 border border-transparent dark:border-neutral-800",
+                                        "bg-[url('/projects/p7.png')] bg-cover"
+                                    )}
+                                >
+                                    {/* Optional overlay or title can go here */}
+                                </div>
+
+                                <h1 className="text-gray-400 font-bold mt-3">
+                                    Building a Fiverr, Upwork like platform with user authentication and profile creation using <span className="text-green-600 font-bold">Django.</span>
+                                </h1>
+
+                                <div className="flex justify-center items-center mt-3 space-x-8">
+                                    <Link href="https://github.com/sandhyapatel12/freelancing-app-Django">
+                                        <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">
+                                            code
+                                        </button>
+                                    </Link>
+                                </div>
+                            </div>
+
+                        
 
                             {/* social media app */}
                             <div className="max-w-xs w-full border border-gray-400 rounded-lg p-3">
@@ -48,7 +81,7 @@ export default function Projects() {
                                     )}>
                                 </div>
 
-                                <h1 className=" text-gray-400 font-bold mt-3"> This is social media app which is developed in react js with all social funcnality.</h1>
+                                <h1 className=" text-gray-400 font-bold mt-3"> This is social media app which is developed in <span className="text-green-600 font-bold">React JS</span> with all social funcnality.</h1>
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
                                     <Link href='https://github.com/sandhyapatel12/social-media-react'>
@@ -88,7 +121,7 @@ export default function Projects() {
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
                                     <Link href='https://github.com/sandhyapatel12/ecommerce-website-react'>
-                                    <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
+                                        <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
                                     </Link>
                                 </div>
                             </div>
@@ -106,7 +139,7 @@ export default function Projects() {
 
                                 <div className="flex justify-center items-center mt-3 space-x-8">
                                     <Link href='https://github.com/sandhyapatel12/iNotebook-react'>
-                                    <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
+                                        <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
                                     </Link>
                                 </div>
                             </div>
@@ -121,10 +154,10 @@ export default function Projects() {
                                 </div>
 
                                 <h1 className=" text-gray-400 font-bold mt-3"> In this react app  user can convert any text into uppercase, lowercase, copy text etc.</h1>
- 
+
                                 <div className="flex justify-center items-center mt-3 space-x-8">
                                     <Link href='https://github.com/sandhyapatel12/TextUtils-react'>
-                                    <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
+                                        <button className="py-2 px-8 rounded-full border-2 border-gray-500 text-green-600 font-bold hover:text-white">code</button>
                                     </Link>
                                 </div>
                             </div>

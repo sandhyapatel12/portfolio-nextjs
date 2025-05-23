@@ -7,19 +7,19 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const words = [
   {
-    text: "Building",
+    text: "Transforming",
   },
   {
-    text: "responsive,",
+    text: "Ideas,",
   },
   {
-    text: "user-focused,",
+    text: "into",
   },
   {
-    text: "web",
+    text: "Responsive",
   },
   {
-    text: "solutions",
+    text: "Web Experiences",
   }
 
 ];
