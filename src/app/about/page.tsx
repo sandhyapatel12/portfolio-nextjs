@@ -37,7 +37,7 @@ const page = () => {
 
           {/* right side */}
           <div className='w-full'>
-            <Image src='/public/img.jpg'
+            <Image src='/img.jpg'
               alt='My Personal Image'
               height={350}
               width={350}
